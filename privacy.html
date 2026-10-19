@@ -1,0 +1,267 @@
+<!doctype html><html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EazyFinance — Політика приватності / Privacy Policy</title><style>:root{--bg:#F1F2F4;--card:#fff;--fg:#101114;--muted:#6B6F77;--line:#E6E8EC;--accent:#101114;--brand:#C8F04A}
+@media (prefers-color-scheme:dark){:root{--bg:#0E0F11;--card:#1A1C20;--fg:#F2F3F5;--muted:#8D9199;--line:#25282D;--accent:#C8F04A}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--fg);background:var(--bg)}
+main{max-width:760px;margin:0 auto;padding:32px 20px 80px}.sheet{background:var(--card);border-radius:24px;padding:28px 24px}
+h1{font-size:28px;line-height:1.2;margin:0 0 8px;letter-spacing:-.02em}h2{font-size:20px;margin:32px 0 10px;padding-top:20px;border-top:1px solid var(--line)}h3{font-size:17px;margin:22px 0 8px}
+a{color:var(--accent);text-underline-offset:3px}hr{border:0;border-top:1px solid var(--line);margin:40px 0}code{background:var(--bg);padding:1px 6px;border-radius:6px;font-size:14px}
+table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}td,th{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.nav{display:flex;align-items:center;gap:14px;font-size:14px;color:var(--muted);margin-bottom:20px;flex-wrap:wrap}.logo{width:32px;height:32px;border-radius:10px;background:var(--brand);display:inline-flex;align-items:center;justify-content:center}
+footer{margin-top:40px;font-size:13px;color:var(--muted)}</style></head><body><main><div class="nav"><span class="logo"><svg width="17" height="17" viewBox="-1 -1 32 32"><rect x="0.0" y="21.2" width="8.8" height="8.8" rx="2.4" fill="#101114"/><rect x="10.6" y="21.2" width="8.8" height="8.8" rx="2.4" fill="#101114"/><rect x="21.2" y="21.2" width="8.8" height="8.8" rx="2.4" fill="#101114"/><rect x="10.6" y="10.6" width="8.8" height="8.8" rx="2.4" fill="#101114"/><rect x="21.2" y="10.6" width="8.8" height="8.8" rx="2.4" fill="#101114"/><rect x="21.2" y="0.0" width="8.8" height="8.8" rx="2.4" fill="#101114"/></svg></span><a href="index.html">EazyFinance</a><a href="privacy.html">Приватність / Privacy</a><a href="terms.html">Умови / Terms</a></div><div class="sheet"><h1>Політика приватності EazyFinance</h1>
+<p><strong>Дата набуття чинності:</strong> 19 жовтня 2026<br />
+<strong>Застосунок:</strong> EazyFinance для iOS (Bundle ID <code>com.eazynapp.finmanager</code>)<br />
+<strong>Розробник і контролер даних:</strong> Ярослав Алімов (Yaroslav Alimov), індивідуальний розробник, Україна<br />
+<strong>Контакт:</strong> y.alimov11@gmail.com</p>
+<p>EazyFinance — особистий фінансовий менеджер. Ця політика пояснює простими словами, які дані застосунок обробляє, де вони зберігаються, кому передаються і як їх видалити.</p>
+<p>Коротко:<br />
+- Ми не показуємо рекламу, не використовуємо аналітичні SDK і трекери, не продаємо й не передаємо дані для маркетингу.<br />
+- Ваші фінансові записи зберігаються на вашому пристрої та в вашому хмарному акаунті (Firebase), щоб працювала синхронізація й резервна копія. Доступ до них має лише ваш акаунт.<br />
+- Токен Monobank зберігається лише на вашому пристрої і нікуди, крім серверів Monobank, не надсилається.<br />
+- Голосовий текст і зображення чеків обробляються на сервері в реальному часі; ми їх не зберігаємо. Зображення чеків обробляє Google Gemini, який може використовувати їх для покращення своїх продуктів (див. 1.5).<br />
+- Акаунт разом з усіма даними можна видалити в застосунку.</p>
+<h2>1. Які дані ми обробляємо</h2>
+<h3>1.1. Дані, які ви вводите самі</h3>
+<p>Транзакції (сума, валюта, дата, категорія, підкатегорія, нотатка, мітки, рахунок), рахунки та їхні залишки (картки, готівка, заощадження, цілі), борги, бюджети, регулярні платежі, власні категорії, а також дані смарт-категорій: марка/модель авто, пробіг, заправки, записи про сервіс, поїздки (назви місць, кілометраж), прийоми їжі, список покупок, ціни продуктів, показники лічильників комунальних послуг, виявлені підписки. Плюс налаштування застосунку (мова, режим головного екрана, Face ID увімкнено/вимкнено тощо).</p>
+<h3>1.2. Дані з банків</h3>
+<p><strong>Monobank.</strong> Ви самостійно створюєте особистий API-токен на api.monobank.ua і вводите його в застосунок. Із цим токеном EazyFinance напряму з вашого пристрою звертається до API Monobank і отримує: список карток, залишки, а також виписку (сума, валюта, опис операції, MCC-код, час). Токен зберігається лише в локальному сховищі на пристрої. У хмарну копію потрапляють тільки метадані підключення (назва, час останньої синхронізації) без самого токена; в експорт даних токен також не потрапляє. Запити до Monobank підпадають під політику приватності Monobank.</p>
+<p><strong>ПриватБанк.</strong> Ви обираєте файл виписки (xlsx) через системний діалог файлів. Файл розбирається на пристрої; на наші сервери він не надсилається.</p>
+<h3>1.3. Акаунт і вхід</h3>
+<p>Для синхронізації використовується Firebase Authentication (Google):<br />
+- <strong>Без входу</strong> застосунок створює анонімний акаунт із випадковим ідентифікатором (UID). Він не містить ваших контактів і не переноситься на інший пристрій.<br />
+- <strong>Вхід через Apple (Sign in with Apple).</strong> Ми отримуємо від Apple стабільний ідентифікатор користувача та email (якщо ви обрали «Приховати email» — це буде адреса-ретранслятор Apple). Ім'я запитується системним діалогом, але застосунок його не зберігає (ані застосунок, ані Firebase Auth його не записують — у токені Apple імені немає). Email показується в Налаштуваннях і потрібен лише для того, щоб ви впізнали свій акаунт.<br />
+Якщо ви входите через Apple після анонімного використання, дані анонімного акаунта прив'язуються до вашого Apple-акаунта.</p>
+<h3>1.4. Голосовий ввід</h3>
+<p>Розпізнавання мовлення виконує системний сервіс Apple (Speech framework) із мовою «українська». Залежно від моделі пристрою та мови Apple може обробляти аудіо на пристрої або на своїх серверах згідно з політикою приватності Apple; EazyFinance не отримує, не записує і не зберігає аудіо. Розпізнаний <strong>текст</strong> (напр. «таксі 150») разом із назвами ваших категорій надсилається на наш проксі-сервер (Cloudflare Workers), який передає його в мовну модель Groq, щоб перетворити фразу на структуровану транзакцію. Ні проксі, ні застосунок не зберігають цей текст; він живе лише поки виконується запит (за умовами Groq запити не використовуються для навчання моделей і за умовчанням не зберігаються; тимчасові технічні журнали до 30 днів можливі лише для розслідування збоїв чи зловживань).</p>
+<h3>1.5. Розпізнавання чеків і платіжок</h3>
+<p>Ви обираєте фото з бібліотеки Фото або файл (зображення/PDF). Зображення зменшується й конвертується в JPEG на пристрої, після чого надсилається на той самий проксі-сервер і далі — у модель комп'ютерного зору Google Gemini (безкоштовний рівень Gemini API). <strong>Важливо:</strong> на безкоштовному рівні Google може зберігати надіслані зображення й відповіді та використовувати їх для покращення своїх продуктів; перед переглядом людьми-рецензентами Google відʼєднує їх від нашого ключа доступу. Ваш ідентифікатор (UID) і email ми не надсилаємо, але на самому фото можуть бути персональні дані (напр. ПІБ, адреса, особовий рахунок на платіжці). Якщо не бажаєте цього — не використовуйте розпізнавання фото, а вносьте суми вручну або голосом. Якщо Gemini недоступний, запит обробляє Groq. Відповідь (магазин, позиції, ціни, показники лічильників) повертається у застосунок. Зображення не зберігаються ні на проксі, ні в хмарі EazyFinance; у вашій бібліотеці Фото застосунок нічого не змінює. Камеру застосунок для цього не використовує — лише вибір наявних фото та файлів.</p>
+<h3>1.6. Швидкий запис після Apple Pay</h3>
+<p>Якщо ви налаштуєте автоматизацію в застосунку «Швидкі команди», після оплати iPhone iOS передає в EazyFinance суму, назву продавця й назву картки зі сповіщення Гаманця. Ці дані обробляються на пристрої: застосунок пропонує категорію (запамʼятовує ваш вибір для цього продавця) і створює транзакцію лише після вашого підтвердження. Платіжних даних картки (номер, CVV) застосунок не отримує.</p>
+<h3>1.7. Імпорт і перенесення даних</h3>
+<p>Файли резервної копії або експорти з інших застосунків і банків, які ви імпортуєте (Налаштування → Резервна копія), читаються на пристрої й на наші сервери не надсилаються. Якщо ви самі надішлете нам файл експорту з проханням перенести дані, ми використаємо його лише для конвертації у формат EazyFinance, повернемо вам результат і видалимо і файл, і результат одразу після відправлення.</p>
+<h3>1.8. Інші мережеві запити</h3>
+<ul>
+<li><strong>Довідка про авто.</strong> Марка, модель і рік вашого авто надсилаються через проксі в мовну модель, щоб підставити об'єм бака і тип пального.</li>
+<li><strong>Маршрути поїздок.</strong> Введені вами назви місць («звідки», «куди», зупинки) надсилаються до сервісів OpenStreetMap Nominatim (геокодування) та OSRM (розрахунок маршруту). Кнопка «Відкрити в Google Maps» відкриває зовнішній застосунок/сайт Google з вашим маршрутом. Геолокацію пристрою (GPS) EazyFinance не використовує.</li>
+<li><strong>Курси валют.</strong> Застосунок завантажує офіційні курси з bank.gov.ua (Національний банк України). Персональні дані при цьому не передаються.</li>
+<li><strong>Покупки.</strong> Покупок у Застосунку немає — платіжних даних ми не отримуємо. Якщо в майбутньому з'явиться підписка, ця Політика буде оновлена до її запуску.</li>
+</ul>
+<h3>1.9. Що ми НЕ збираємо</h3>
+<p>Геолокацію пристрою, контакти, рекламний ідентифікатор (IDFA), дані про використання застосунку (аналітика), журнали збоїв, дані здоров'я, історію браузера. У застосунку немає реклами і сторонніх трекерів.</p>
+<h2>2. Де зберігаються дані</h2>
+<ul>
+<li><strong>На пристрої</strong> — у локальному сховищі застосунку (захищене шифруванням iOS). Це основна копія: застосунок працює й офлайн.</li>
+<li><strong>У хмарі</strong> — у Google Firebase Cloud Firestore, у документі, доступному лише вашому акаунту (правила безпеки: <code>request.auth.uid == userId</code>). Хмарна копія створюється автоматично і для анонімного акаунта, і для акаунта Apple — вона потрібна для синхронізації між пристроями та відновлення після перевстановлення. Після «Вийти» в Налаштуваннях дані більше не надсилаються в хмару й лишаються тільки на пристрої.</li>
+<li><strong>Проксі-сервер</strong> на Cloudflare Workers не має власного сховища: він лише пересилає запит до моделі (Google Gemini або Groq) і повертає відповідь. Технічні журнали Cloudflare (IP-адреса, час, статус) можуть зберігатися короткий час згідно з політикою Cloudflare.</li>
+<li><strong>Google Gemini API</strong> (безкоштовний рівень, США) обробляє зображення чеків і платіжок. Google може зберігати їх і використовувати для покращення своїх продуктів (див. 1.5).</li>
+<li><strong>Groq</strong> (США) обробляє голосовий текст і, як запасний варіант, зображення. За умовами Groq запити не використовуються для навчання моделей і за умовчанням не зберігаються; тимчасові технічні журнали (до 30 днів) можливі лише для розслідування збоїв чи зловживань.</li>
+</ul>
+<p>Передача даних за межі України/ЄС: сервери Google, Cloudflare, Groq і Apple можуть знаходитися у США та інших країнах. Ці компанії діють як обробники даних на підставі своїх стандартних умов обробки даних.</p>
+<h2>3. Навіщо ми обробляємо дані і на якій підставі</h2>
+<ul>
+<li><strong>Виконання договору з вами</strong> (надання функцій застосунку): облік, синхронізація, аналітика, банківські інтеграції.</li>
+<li><strong>Ваша згода</strong> — для доступу до мікрофона, розпізнавання мовлення, бібліотеки Фото, Face ID і сповіщень. Згоду можна відкликати в Налаштуваннях iOS; відповідна функція перестане працювати, решта застосунку — ні.</li>
+<li><strong>Законний інтерес</strong> — безпека акаунта та захист від зловживань (напр. ключ доступу до проксі-сервера).</li>
+</ul>
+<h2>4. Кому передаються дані</h2>
+<p>Тільки сервісним провайдерам, без яких функція не працює, і тільки в обсязі, потрібному для функції:</p>
+<table>
+<thead>
+<tr>
+<th>Провайдер</th>
+<th>Що отримує</th>
+<th>Навіщо</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apple (Sign in with Apple, Speech, Face ID)</td>
+<td>ідентифікатор Apple-акаунта, email; аудіо для розпізнавання мовлення</td>
+<td>вхід, голосовий ввід. Біометрія Face ID не покидає пристрій і нам не доступна</td>
+</tr>
+<tr>
+<td>Google Firebase (Authentication, Cloud Firestore)</td>
+<td>UID, email, ваші фінансові записи (див. 1.1)</td>
+<td>акаунт, хмарна копія, синхронізація</td>
+</tr>
+<tr>
+<td>Cloudflare Workers</td>
+<td>текст голосового вводу, зображення чеків/платіжок, марка/модель авто; IP-адреса технічно</td>
+<td>проксі до моделі, без збереження</td>
+</tr>
+<tr>
+<td>Google Gemini API (безкоштовний рівень)</td>
+<td>зображення чеків/платіжок (без вашого UID і без email); Google може використовувати їх для покращення продуктів</td>
+<td>розпізнавання чеків і платіжок</td>
+</tr>
+<tr>
+<td>Groq</td>
+<td>голосовий текст, марка/модель авто; зображення — якщо Gemini недоступний (без UID і email)</td>
+<td>розпізнавання тексту, запасне — зображень</td>
+</tr>
+<tr>
+<td>OpenStreetMap Nominatim, OSRM</td>
+<td>назви місць для поїздок</td>
+<td>геокодування та маршрут</td>
+</tr>
+<tr>
+<td>Monobank</td>
+<td>ваш API-токен та запити виписки — напряму з пристрою</td>
+<td>синхронізація карток за вашою ініціативою</td>
+</tr>
+<tr>
+<td>Національний банк України (bank.gov.ua)</td>
+<td>нічого персонального</td>
+<td>курси валют</td>
+</tr>
+</tbody>
+</table>
+<p>Ми не продаємо дані, не передаємо їх рекламним мережам і не використовуємо для профілювання.</p>
+<h2>5. Скільки зберігаємо</h2>
+<p>Ваші записи зберігаються, поки існує акаунт. Локальна копія — поки встановлений застосунок або поки ви не натиснете «Очистити всі дані». Ми не зберігаємо дані, що проходять через проксі-сервер (голосовий текст, зображення). Строк зберігання на боці Google Gemini і Groq визначають їхні умови (див. 2 і 1.5).</p>
+<h2>6. Ваші права та інструменти в застосунку</h2>
+<ul>
+<li><strong>Переглянути й виправити</strong> — усе редагується в застосунку.</li>
+<li><strong>Експортувати</strong> — Налаштування → Резервна копія → «експорт JSON» (без банківських токенів).</li>
+<li><strong>Видалити акаунт і дані</strong> — Налаштування → Акаунт → «видалити акаунт назавжди»: видаляються хмарні дані, акаунт Firebase і локальна копія. Дія незворотна. (Для акаунтів Apple. Якщо ви користуєтесь без входу — «Очистити всі дані» очищає локальну і хмарну копію анонімного акаунта.)</li>
+<li><strong>Вийти</strong> — Налаштування → Акаунт → «Вийти»: застосунок працює далі лише локально.</li>
+<li><strong>Відкликати дозволи</strong> — Налаштування iOS → EazyFinance.</li>
+<li>Також ви можете відкликати доступ EazyFinance до Apple ID у Налаштуваннях iOS → Apple ID → Вхід із Apple, а токен Monobank — видалити на api.monobank.ua.<br />
+Якщо ви перебуваєте в ЄС/ЄЕЗ або Великій Британії, ви також маєте право на доступ, перенесення, обмеження обробки та скаргу до наглядового органу. Для будь-якого запиту напишіть на y.alimov11@gmail.com.</li>
+</ul>
+<h2>7. Діти</h2>
+<p>Застосунок має вікову категорію 4+, але не призначений для дітей і не збирає свідомо дані дітей до 16 років. Якщо ви вважаєте, що дитина створила акаунт, напишіть нам — ми його видалимо.</p>
+<h2>8. Безпека</h2>
+<p>Усі мережеві з'єднання зашифровані (HTTPS/TLS). Доступ до хмарних даних обмежений правилами безпеки Firestore на рівні вашого акаунта. Токен Monobank не залишає пристрій. За бажанням застосунок блокується Face ID/Touch ID. Жодна система не є абсолютно безпечною, тому радимо не передавати свій Monobank-токен третім особам і використовувати код-пароль на пристрої.</p>
+<h2>9. Зміни цієї політики</h2>
+<p>Про суттєві зміни ми повідомимо в застосунку або на цій сторінці. Дата останнього оновлення — вгорі.</p>
+<h2>10. Контакти</h2>
+<p>Ярослав Алімов (Yaroslav Alimov), Україна. Email: y.alimov11@gmail.com</p>
+<hr />
+<h1>EazyFinance Privacy Policy</h1>
+<p><strong>Effective date:</strong> October 19, 2026<br />
+<strong>App:</strong> EazyFinance for iOS (Bundle ID <code>com.eazynapp.finmanager</code>)<br />
+<strong>Developer and data controller:</strong> Yaroslav Alimov, individual developer, Ukraine<br />
+<strong>Contact:</strong> y.alimov11@gmail.com</p>
+<p>EazyFinance is a personal finance manager. This policy explains in plain language what data the app processes, where it is stored, who receives it and how to delete it.</p>
+<p>In short:<br />
+- No ads, no analytics SDKs, no trackers. We do not sell data or share it for marketing.<br />
+- Your financial records are stored on your device and in your own cloud account (Firebase) so that sync and backup work. Only your account can access them.<br />
+- Your Monobank token is stored only on your device and is sent nowhere except Monobank's own servers.<br />
+- Voice text and receipt images are processed on a server in real time; we do not store them. Receipt images are processed by Google Gemini, which may use them to improve its products (see 1.5).<br />
+- You can delete your account together with all data inside the app.</p>
+<h2>1. What data we process</h2>
+<h3>1.1. Data you enter yourself</h3>
+<p>Transactions (amount, currency, date, category, subcategory, note, labels, account), accounts and balances (cards, cash, savings, goals), debts, budgets, recurring payments, custom categories, and smart-category data: car make/model, mileage, fill-ups, service records, trips (place names, distance), meals, shopping list, product prices, utility meter readings, detected subscriptions. Plus app settings (language, home screen mode, Face ID on/off, etc.).</p>
+<h3>1.2. Bank data</h3>
+<p><strong>Monobank.</strong> You create a personal API token at api.monobank.ua yourself and enter it in the app. With this token EazyFinance calls the Monobank API directly from your device and receives your card list, balances and statement (amount, currency, description, MCC code, time). The token is stored only in the app's local storage on the device. The cloud copy receives only connection metadata (label, last sync time) without the token itself; the token is also excluded from data export. Requests to Monobank are subject to Monobank's privacy policy.</p>
+<p><strong>PrivatBank.</strong> You pick a statement file (xlsx) via the system file dialog. The file is parsed on the device and is not sent to our servers.</p>
+<h3>1.3. Account and sign-in</h3>
+<p>Sync relies on Firebase Authentication (Google):<br />
+- <strong>Without signing in</strong>, the app creates an anonymous account with a random identifier (UID). It contains no contact details and cannot be moved to another device.<br />
+- <strong>Sign in with Apple.</strong> We receive from Apple a stable user identifier and an email address (if you choose “Hide My Email”, this is Apple's relay address). The name is requested by the system dialog but the app does not store it (neither the app nor Firebase Auth records it — Apple's token does not contain the name). The email is shown in Settings only so you can recognize your account.<br />
+If you sign in with Apple after anonymous use, the anonymous account's data is linked to your Apple account.</p>
+<h3>1.4. Voice entry</h3>
+<p>Speech recognition is performed by Apple's system service (Speech framework) with the Ukrainian language. Depending on the device model and language, Apple may process audio on the device or on its servers under Apple's privacy policy; EazyFinance does not receive, record or store audio. The recognized <strong>text</strong> (e.g. “taxi 150”) together with your category names is sent to our proxy server (Cloudflare Workers), which forwards it to a Groq language model to turn the phrase into a structured transaction. Neither the proxy nor the app stores this text; it exists only for the duration of the request (under Groq's terms, requests are not used to train models and are not stored by default; temporary technical logs of up to 30 days are possible only to investigate failures or abuse).</p>
+<h3>1.5. Receipt and bill recognition</h3>
+<p>You pick a photo from your Photos library or a file (image/PDF). The image is downscaled and converted to JPEG on the device and then sent to the same proxy and on to a Google Gemini vision model (free tier of the Gemini API). <strong>Important:</strong> on the free tier Google may store submitted images and responses and use them to improve its products; before human reviewers see them, Google disconnects them from our access key. We do not send your identifier (UID) or email, but the photo itself may contain personal data (e.g. name, address, account number on a utility bill). If you do not want this, do not use photo recognition — enter amounts manually or by voice. If Gemini is unavailable, Groq handles the request. The response (store, line items, prices, meter readings) is returned to the app. Images are not stored by the proxy or in the EazyFinance cloud; the app does not modify your Photos library. The camera is not used for this — only selection of existing photos and files.</p>
+<h3>1.6. Quick entry after Apple Pay</h3>
+<p>If you set up an automation in the Shortcuts app, after you pay with your iPhone iOS passes the amount, merchant name and card name from the Wallet notification to EazyFinance. This data is processed on the device: the app suggests a category (remembering your choice for that merchant) and creates a transaction only after you confirm. The app never receives card payment data (number, CVV).</p>
+<h3>1.7. Importing and transferring data</h3>
+<p>Backup files or exports from other apps and banks that you import (Settings → Backup) are read on the device and are not sent to our servers. If you choose to send us an export file and ask us to transfer your data, we use it only to convert it into the EazyFinance format, send the result back to you and delete both the file and the result right after sending.</p>
+<h3>1.8. Other network requests</h3>
+<ul>
+<li><strong>Car reference.</strong> Your car's make, model and year are sent through the proxy to a language model to pre-fill tank capacity and fuel type.</li>
+<li><strong>Trip routes.</strong> Place names you type (“from”, “to”, stops) are sent to OpenStreetMap Nominatim (geocoding) and OSRM (routing). “Open in Google Maps” opens the external Google app/site with your route. EazyFinance does not use device location (GPS).</li>
+<li><strong>Exchange rates.</strong> The app downloads official rates from bank.gov.ua (National Bank of Ukraine). No personal data is transmitted.</li>
+<li><strong>Purchases.</strong> The App has no in-app purchases — we receive no payment data. If a subscription is introduced in the future, this Policy will be updated before launch.</li>
+</ul>
+<h3>1.9. What we do NOT collect</h3>
+<p>Device location, contacts, advertising identifier (IDFA), app usage analytics, crash logs, health data, browsing history. There are no ads and no third-party trackers in the app.</p>
+<h2>2. Where data is stored</h2>
+<ul>
+<li><strong>On the device</strong> — in the app's local storage (protected by iOS encryption). This is the primary copy; the app works offline.</li>
+<li><strong>In the cloud</strong> — in Google Firebase Cloud Firestore, in a document accessible only to your account (security rule: <code>request.auth.uid == userId</code>). The cloud copy is created automatically for both anonymous and Apple accounts — it is needed for cross-device sync and recovery after reinstalling. After “Sign out” in Settings, data is no longer sent to the cloud and remains on the device only.</li>
+<li><strong>Proxy server</strong> on Cloudflare Workers has no storage of its own: it only forwards the request to the model (Google Gemini or Groq) and returns the response. Cloudflare's technical logs (IP address, time, status) may be kept briefly under Cloudflare's policy.</li>
+<li><strong>Google Gemini API</strong> (free tier, USA) processes receipt and bill images. Google may store them and use them to improve its products (see 1.5).</li>
+<li><strong>Groq</strong> (USA) processes voice text and, as a fallback, images. Under Groq's terms, requests are not used to train models and are not stored by default; temporary technical logs (up to 30 days) are possible only to investigate failures or abuse.</li>
+</ul>
+<p>Transfers outside Ukraine/EU: servers of Google, Cloudflare, Groq and Apple may be located in the USA and other countries. These companies act as data processors under their standard data processing terms.</p>
+<h2>3. Why we process data and on what basis</h2>
+<ul>
+<li><strong>Performance of our contract with you</strong> (providing app features): tracking, sync, analytics, bank integrations.</li>
+<li><strong>Your consent</strong> — for microphone, speech recognition, Photos library, Face ID and notifications. You can withdraw consent in iOS Settings; the related feature stops working, the rest of the app does not.</li>
+<li><strong>Legitimate interest</strong> — account security and abuse prevention (e.g. the access key for the proxy server).</li>
+</ul>
+<h2>4. Who receives data</h2>
+<p>Only service providers without which a feature cannot work, and only to the extent the feature needs:</p>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>What it receives</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apple (Sign in with Apple, Speech, Face ID)</td>
+<td>Apple account identifier, email; audio for speech recognition</td>
+<td>sign-in, voice entry. Face ID biometrics never leave the device and are not available to us</td>
+</tr>
+<tr>
+<td>Google Firebase (Authentication, Cloud Firestore)</td>
+<td>UID, email, your financial records (see 1.1)</td>
+<td>account, cloud copy, sync</td>
+</tr>
+<tr>
+<td>Cloudflare Workers</td>
+<td>voice text, receipt/bill images, car make/model; IP address technically</td>
+<td>proxy to the model, no storage</td>
+</tr>
+<tr>
+<td>Google Gemini API (free tier)</td>
+<td>receipt/bill images (without your UID or email); Google may use them to improve its products</td>
+<td>receipt and bill recognition</td>
+</tr>
+<tr>
+<td>Groq</td>
+<td>voice text, car make/model; images if Gemini is unavailable (without UID or email)</td>
+<td>text recognition, fallback for images</td>
+</tr>
+<tr>
+<td>OpenStreetMap Nominatim, OSRM</td>
+<td>place names for trips</td>
+<td>geocoding and routing</td>
+</tr>
+<tr>
+<td>Monobank</td>
+<td>your API token and statement requests — directly from the device</td>
+<td>card sync at your request</td>
+</tr>
+<tr>
+<td>National Bank of Ukraine (bank.gov.ua)</td>
+<td>nothing personal</td>
+<td>exchange rates</td>
+</tr>
+</tbody>
+</table>
+<p>We do not sell data, share it with ad networks or use it for profiling.</p>
+<h2>5. Retention</h2>
+<p>Your records are kept for as long as your account exists. The local copy is kept while the app is installed or until you tap “Clear all data”. We do not retain data passing through the proxy (voice text, images). Retention on the Google Gemini and Groq side is governed by their terms (see 2 and 1.5).</p>
+<h2>6. Your rights and in-app tools</h2>
+<ul>
+<li><strong>View and correct</strong> — everything is editable in the app.</li>
+<li><strong>Export</strong> — Settings → Backup → “export JSON” (bank tokens excluded).</li>
+<li><strong>Delete account and data</strong> — Settings → Account → “delete account permanently”: cloud data, the Firebase account and the local copy are deleted. This cannot be undone. (For Apple accounts. If you use the app without signing in, “Clear all data” wipes the local and cloud copy of the anonymous account.)</li>
+<li><strong>Sign out</strong> — Settings → Account → “Sign out”: the app keeps working locally only.</li>
+<li><strong>Revoke permissions</strong> — iOS Settings → EazyFinance.</li>
+<li>You can also stop using your Apple ID with EazyFinance in iOS Settings → Apple ID → Sign in with Apple, and revoke the Monobank token at api.monobank.ua.<br />
+If you are in the EU/EEA or the UK, you also have the rights of access, portability, restriction of processing and to lodge a complaint with a supervisory authority. For any request, write to y.alimov11@gmail.com.</li>
+</ul>
+<h2>7. Children</h2>
+<p>The app is rated 4+ but is not directed at children and does not knowingly collect data from children under 16. If you believe a child has created an account, contact us and we will delete it.</p>
+<h2>8. Security</h2>
+<p>All network connections are encrypted (HTTPS/TLS). Access to cloud data is restricted by Firestore security rules at the account level. The Monobank token never leaves the device. Optionally, the app locks with Face ID/Touch ID. No system is perfectly secure, so please do not share your Monobank token with anyone and use a passcode on your device.</p>
+<h2>9. Changes to this policy</h2>
+<p>We will announce material changes in the app or on this page. The last update date is at the top.</p>
+<h2>10. Contact</h2>
+<p>Yaroslav Alimov, Ukraine. Email: y.alimov11@gmail.com</p></div><footer>EazyFinance · <a href="mailto:y.alimov11@gmail.com">y.alimov11@gmail.com</a></footer></main></body></html>
