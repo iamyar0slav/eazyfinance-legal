@@ -7,13 +7,14 @@ a{color:var(--accent);text-underline-offset:3px}hr{border:0;border-top:1px solid
 table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}td,th{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
 .nav{display:flex;align-items:center;gap:14px;font-size:14px;color:var(--muted);margin-bottom:20px;flex-wrap:wrap}.logo{width:32px;height:32px;border-radius:10px;background:var(--brand);display:inline-flex;align-items:center;justify-content:center}
 footer{margin-top:40px;font-size:13px;color:var(--muted)}</style></head><body><main><div class="nav"><span class="logo"><svg width="17" height="17" viewBox="-1 -1 32 32"><rect x="0.0" y="21.2" width="8.8" height="8.8" rx="2.4" fill="#101114"/><rect x="10.6" y="21.2" width="8.8" height="8.8" rx="2.4" fill="#101114"/><rect x="21.2" y="21.2" width="8.8" height="8.8" rx="2.4" fill="#101114"/><rect x="10.6" y="10.6" width="8.8" height="8.8" rx="2.4" fill="#101114"/><rect x="21.2" y="10.6" width="8.8" height="8.8" rx="2.4" fill="#101114"/><rect x="21.2" y="0.0" width="8.8" height="8.8" rx="2.4" fill="#101114"/></svg></span><a href="index.html">EazyFinance</a><a href="privacy.html">Приватність / Privacy</a><a href="terms.html">Умови / Terms</a></div><div class="sheet"><h1>Політика приватності EazyFinance</h1>
-<p><strong>Дата набуття чинності:</strong> 19 жовтня 2026<br />
+<p><strong>Дата набуття чинності:</strong> 6 листопада 2026 (версія 1.0.1: додано анонімну статистику і звіти про збої, розд. 1.9)<br />
 <strong>Застосунок:</strong> EazyFinance для iOS (Bundle ID <code>com.eazynapp.finmanager</code>)<br />
 <strong>Розробник і контролер даних:</strong> Ярослав Алімов (Yaroslav Alimov), індивідуальний розробник, Україна<br />
 <strong>Контакт:</strong> y.alimov11@gmail.com</p>
 <p>EazyFinance — особистий фінансовий менеджер. Ця політика пояснює простими словами, які дані застосунок обробляє, де вони зберігаються, кому передаються і як їх видалити.</p>
 <p>Коротко:<br />
-- Ми не показуємо рекламу, не використовуємо аналітичні SDK і трекери, не продаємо й не передаємо дані для маркетингу.<br />
+- Ми не показуємо рекламу, не використовуємо трекери й рекламний ідентифікатор, не продаємо й не передаємо дані для маркетингу.<br />
+- Застосунок збирає анонімну статистику використання й звіти про збої (Google Firebase) — без сум, нотаток і даних акаунта. Якщо ви заперечуєте проти цього — напишіть на y.alimov11@gmail.com.<br />
 - Ваші фінансові записи зберігаються на вашому пристрої та в вашому хмарному акаунті (Firebase), щоб працювала синхронізація й резервна копія. Доступ до них має лише ваш акаунт.<br />
 - Токен Monobank зберігається лише на вашому пристрої і нікуди, крім серверів Monobank, не надсилається.<br />
 - Голосовий текст і зображення чеків обробляються на сервері в реальному часі; ми їх не зберігаємо. Зображення чеків обробляє Google Gemini, який може використовувати їх для покращення своїх продуктів (див. 1.5).<br />
@@ -44,8 +45,15 @@ footer{margin-top:40px;font-size:13px;color:var(--muted)}</style></head><body><m
 <li><strong>Курси валют.</strong> Застосунок завантажує офіційні курси з bank.gov.ua (Національний банк України). Персональні дані при цьому не передаються.</li>
 <li><strong>Покупки.</strong> Покупок у Застосунку немає — платіжних даних ми не отримуємо. Якщо в майбутньому з'явиться підписка, ця Політика буде оновлена до її запуску.</li>
 </ul>
-<h3>1.9. Що ми НЕ збираємо</h3>
-<p>Геолокацію пристрою, контакти, рекламний ідентифікатор (IDFA), дані про використання застосунку (аналітика), журнали збоїв, дані здоров'я, історію браузера. У застосунку немає реклами і сторонніх трекерів.</p>
+<h3>1.9. Анонімна статистика і звіти про збої</h3>
+<p>Щоб розуміти, якими функціями користуються, і виправляти помилки, застосунок надсилає до Google Firebase Analytics і Firebase Crashlytics:<br />
+- <strong>події використання</strong> — назва дії й короткі технічні параметри: напр. «запис додано» (джерело: вручну / голосом / Apple Pay), «відкрито аналітику», «створено смарт-категорію» (тип), «імпорт резервної копії» (режим);<br />
+- <strong>звіти про збої й помилки</strong> — технічний стек помилки, модель пристрою, версії iOS і застосунку, час;<br />
+- <strong>технічні дані Firebase</strong> — випадковий ідентифікатор інсталяції застосунку, модель пристрою, мову, приблизне місце (країна/регіон — Google визначає з IP-адреси, геолокацію пристрою не використовуємо), час сесій.</p>
+<p>Ми <strong>не</strong> передаємо в статистику суми, валюти конкретних операцій, нотатки, назви продавців, рахунків чи категорій, email, UID акаунта, токени. Статистика не привʼязана до вашого акаунта, рекламний ідентифікатор (IDFA) не збирається, відстеження між застосунками немає.<br />
+Підстава — законний інтерес (стабільність і покращення застосунку). Ви маєте право заперечити проти такої обробки: напишіть на y.alimov11@gmail.com, і ми підкажемо, як її зупинити, та видалимо повʼязані дані, які можемо ідентифікувати.</p>
+<h3>1.10. Що ми НЕ збираємо</h3>
+<p>Геолокацію пристрою, контакти, рекламний ідентифікатор (IDFA), дані здоровʼя, історію браузера. У застосунку немає реклами і трекерів.</p>
 <h2>2. Де зберігаються дані</h2>
 <ul>
 <li><strong>На пристрої</strong> — у локальному сховищі застосунку (захищене шифруванням iOS). Це основна копія: застосунок працює й офлайн.</li>
@@ -59,7 +67,7 @@ footer{margin-top:40px;font-size:13px;color:var(--muted)}</style></head><body><m
 <ul>
 <li><strong>Виконання договору з вами</strong> (надання функцій застосунку): облік, синхронізація, аналітика, банківські інтеграції.</li>
 <li><strong>Ваша згода</strong> — для доступу до мікрофона, розпізнавання мовлення, бібліотеки Фото, Face ID і сповіщень. Згоду можна відкликати в Налаштуваннях iOS; відповідна функція перестане працювати, решта застосунку — ні.</li>
-<li><strong>Законний інтерес</strong> — безпека акаунта та захист від зловживань (напр. ключ доступу до проксі-сервера).</li>
+<li><strong>Законний інтерес</strong> — безпека акаунта та захист від зловживань (напр. ключ доступу до проксі-сервера); стабільність і покращення застосунку (анонімна статистика і звіти про збої, розд. 1.9 — з правом заперечити).</li>
 </ul>
 <h2>4. Кому передаються дані</h2>
 <p>Тільки сервісним провайдерам, без яких функція не працює, і тільки в обсязі, потрібному для функції:</p>
@@ -81,6 +89,11 @@ footer{margin-top:40px;font-size:13px;color:var(--muted)}</style></head><body><m
 <td>Google Firebase (Authentication, Cloud Firestore)</td>
 <td>UID, email, ваші фінансові записи (див. 1.1)</td>
 <td>акаунт, хмарна копія, синхронізація</td>
+</tr>
+<tr>
+<td>Google Firebase (Analytics, Crashlytics)</td>
+<td>анонімні події використання, звіти про збої, ідентифікатор інсталяції (див. 1.9); без UID, email і фінансових даних</td>
+<td>статистика використання, виправлення помилок</td>
 </tr>
 <tr>
 <td>Cloudflare Workers</td>
@@ -116,7 +129,7 @@ footer{margin-top:40px;font-size:13px;color:var(--muted)}</style></head><body><m
 </table>
 <p>Ми не продаємо дані, не передаємо їх рекламним мережам і не використовуємо для профілювання.</p>
 <h2>5. Скільки зберігаємо</h2>
-<p>Ваші записи зберігаються, поки існує акаунт. Локальна копія — поки встановлений застосунок або поки ви не натиснете «Очистити всі дані». Ми не зберігаємо дані, що проходять через проксі-сервер (голосовий текст, зображення). Строк зберігання на боці Google Gemini і Groq визначають їхні умови (див. 2 і 1.5).</p>
+<p>Ваші записи зберігаються, поки існує акаунт. Локальна копія — поки встановлений застосунок або поки ви не натиснете «Очистити всі дані». Ми не зберігаємо дані, що проходять через проксі-сервер (голосовий текст, зображення). Строк зберігання на боці Google Gemini і Groq визначають їхні умови (див. 2 і 1.5). Анонімна статистика зберігається в Firebase Analytics не довше 14 місяців, звіти про збої в Crashlytics — до 90 днів.</p>
 <h2>6. Ваші права та інструменти в застосунку</h2>
 <ul>
 <li><strong>Переглянути й виправити</strong> — усе редагується в застосунку.</li>
@@ -137,13 +150,14 @@ footer{margin-top:40px;font-size:13px;color:var(--muted)}</style></head><body><m
 <p>Ярослав Алімов (Yaroslav Alimov), Україна. Email: y.alimov11@gmail.com</p>
 <hr />
 <h1>EazyFinance Privacy Policy</h1>
-<p><strong>Effective date:</strong> October 19, 2026<br />
+<p><strong>Effective date:</strong> November 6, 2026 (version 1.0.1: anonymous statistics and crash reports added, section 1.9)<br />
 <strong>App:</strong> EazyFinance for iOS (Bundle ID <code>com.eazynapp.finmanager</code>)<br />
 <strong>Developer and data controller:</strong> Yaroslav Alimov, individual developer, Ukraine<br />
 <strong>Contact:</strong> y.alimov11@gmail.com</p>
 <p>EazyFinance is a personal finance manager. This policy explains in plain language what data the app processes, where it is stored, who receives it and how to delete it.</p>
 <p>In short:<br />
-- No ads, no analytics SDKs, no trackers. We do not sell data or share it for marketing.<br />
+- No ads, no trackers, no advertising identifier. We do not sell data or share it for marketing.<br />
+- The app collects anonymous usage statistics and crash reports (Google Firebase) — no amounts, notes or account data. If you object to this, email y.alimov11@gmail.com.<br />
 - Your financial records are stored on your device and in your own cloud account (Firebase) so that sync and backup work. Only your account can access them.<br />
 - Your Monobank token is stored only on your device and is sent nowhere except Monobank's own servers.<br />
 - Voice text and receipt images are processed on a server in real time; we do not store them. Receipt images are processed by Google Gemini, which may use them to improve its products (see 1.5).<br />
@@ -174,8 +188,15 @@ If you sign in with Apple after anonymous use, the anonymous account's data is l
 <li><strong>Exchange rates.</strong> The app downloads official rates from bank.gov.ua (National Bank of Ukraine). No personal data is transmitted.</li>
 <li><strong>Purchases.</strong> The App has no in-app purchases — we receive no payment data. If a subscription is introduced in the future, this Policy will be updated before launch.</li>
 </ul>
-<h3>1.9. What we do NOT collect</h3>
-<p>Device location, contacts, advertising identifier (IDFA), app usage analytics, crash logs, health data, browsing history. There are no ads and no third-party trackers in the app.</p>
+<h3>1.9. Anonymous statistics and crash reports</h3>
+<p>To understand which features are used and to fix bugs, the app sends to Google Firebase Analytics and Firebase Crashlytics:<br />
+- <strong>usage events</strong> — the action name and short technical parameters, e.g. “entry added” (source: manual / voice / Apple Pay), “analytics opened”, “smart category created” (type), “backup imported” (mode);<br />
+- <strong>crash and error reports</strong> — the technical stack trace, device model, iOS and app versions, time;<br />
+- <strong>Firebase technical data</strong> — a random app-installation identifier, device model, language, approximate location (country/region — derived by Google from the IP address; device location is not used), session times.</p>
+<p>We do <strong>not</strong> send amounts, the currencies of specific transactions, notes, merchant, account or category names, email, account UID or tokens. Statistics are not linked to your account, the advertising identifier (IDFA) is not collected, and there is no cross-app tracking.<br />
+Legal basis — legitimate interest (app stability and improvement). You have the right to object to this processing: email y.alimov11@gmail.com and we will explain how to stop it and delete related data we can identify.</p>
+<h3>1.10. What we do NOT collect</h3>
+<p>Device location, contacts, advertising identifier (IDFA), health data, browsing history. There are no ads and no trackers in the app.</p>
 <h2>2. Where data is stored</h2>
 <ul>
 <li><strong>On the device</strong> — in the app's local storage (protected by iOS encryption). This is the primary copy; the app works offline.</li>
@@ -189,7 +210,7 @@ If you sign in with Apple after anonymous use, the anonymous account's data is l
 <ul>
 <li><strong>Performance of our contract with you</strong> (providing app features): tracking, sync, analytics, bank integrations.</li>
 <li><strong>Your consent</strong> — for microphone, speech recognition, Photos library, Face ID and notifications. You can withdraw consent in iOS Settings; the related feature stops working, the rest of the app does not.</li>
-<li><strong>Legitimate interest</strong> — account security and abuse prevention (e.g. the access key for the proxy server).</li>
+<li><strong>Legitimate interest</strong> — account security and abuse prevention (e.g. the access key for the proxy server); app stability and improvement (anonymous statistics and crash reports, section 1.9 — with the right to object).</li>
 </ul>
 <h2>4. Who receives data</h2>
 <p>Only service providers without which a feature cannot work, and only to the extent the feature needs:</p>
@@ -211,6 +232,11 @@ If you sign in with Apple after anonymous use, the anonymous account's data is l
 <td>Google Firebase (Authentication, Cloud Firestore)</td>
 <td>UID, email, your financial records (see 1.1)</td>
 <td>account, cloud copy, sync</td>
+</tr>
+<tr>
+<td>Google Firebase (Analytics, Crashlytics)</td>
+<td>anonymous usage events, crash reports, installation identifier (see 1.9); no UID, email or financial data</td>
+<td>usage statistics, bug fixing</td>
 </tr>
 <tr>
 <td>Cloudflare Workers</td>
@@ -246,7 +272,7 @@ If you sign in with Apple after anonymous use, the anonymous account's data is l
 </table>
 <p>We do not sell data, share it with ad networks or use it for profiling.</p>
 <h2>5. Retention</h2>
-<p>Your records are kept for as long as your account exists. The local copy is kept while the app is installed or until you tap “Clear all data”. We do not retain data passing through the proxy (voice text, images). Retention on the Google Gemini and Groq side is governed by their terms (see 2 and 1.5).</p>
+<p>Your records are kept for as long as your account exists. The local copy is kept while the app is installed or until you tap “Clear all data”. We do not retain data passing through the proxy (voice text, images). Retention on the Google Gemini and Groq side is governed by their terms (see 2 and 1.5). Anonymous statistics are kept in Firebase Analytics for no longer than 14 months, crash reports in Crashlytics for up to 90 days.</p>
 <h2>6. Your rights and in-app tools</h2>
 <ul>
 <li><strong>View and correct</strong> — everything is editable in the app.</li>
